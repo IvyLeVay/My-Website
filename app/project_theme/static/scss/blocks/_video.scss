@@ -53,6 +53,21 @@
 		background: linear-gradient(rgba(232, 183, 227, 0.4), rgba(200, 132, 166, 0.7));
 		height: 300px;
 	}
+	.fa{
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		bottom: 14px;
+		margin: 0 auto;
+		z-index: 2;
+		font-size: 26px;
+		color: white;
+		animation: blinker 2.5s linear infinite;
+	}
+	@keyframes blinker {  
+	50% { opacity: 0; }
+	}
 }
 
 

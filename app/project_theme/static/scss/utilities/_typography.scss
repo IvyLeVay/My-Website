@@ -11,6 +11,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
 }
 
+h1{
+    color: $pink;
+    font-size: 32px;
+}
+h2{
+    color: $peach;
+}
 
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
     margin: 0;
@@ -75,6 +82,21 @@ blockquote, blockquote p {
 
 img, object, embed {
    max-width: 100%;
+}
+
+// ICON FONTS
+//------------------------------------------//
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-chevron-down:before {
+    content: $fa-var-chevron-down;
 }
 
 /* img {

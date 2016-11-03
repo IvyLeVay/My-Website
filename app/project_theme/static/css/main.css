@@ -2329,6 +2329,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1; }
 
+h1 {
+  color: #ee2a7b;
+  font-size: 32px; }
+
+h2 {
+  color: #c884a6; }
+
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
@@ -2379,6 +2386,18 @@ blockquote, blockquote p {
 
 img, object, embed {
   max-width: 100%; }
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-chevron-down:before {
+  content: ""; }
 
 /* img {
     display: inline-block;
@@ -2516,7 +2535,20 @@ nav {
   .bg-video .overlay {
     background: linear-gradient(rgba(232, 183, 227, 0.4), rgba(200, 132, 166, 0.7));
     height: 300px; }
-
+  .bg-video .fa {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 14px;
+    margin: 0 auto;
+    z-index: 2;
+    font-size: 26px;
+    color: white;
+    animation: blinker 2.5s linear infinite; }
+@keyframes blinker {
+  50% {
+    opacity: 0; } }
 @media (min-width: 500px) {
   .bg-video {
     height: 600px; }
@@ -2526,8 +2558,25 @@ nav {
     .bg-video .overlay {
       height: 600px; } }
 /*** Footer ***/
+footer {
+  background-color: #ee2a7b;
+  color: white;
+  padding: 11.5px;
+  padding-bottom: 0;
+  margin-top: 20px; }
+  footer a {
+    color: white;
+    text-decoration: underline; }
+    footer a:hover {
+      color: #4d9de0; }
+  footer .provided,
+  footer .copyright {
+    display: block;
+    float: left;
+    width: 50%; }
+  footer .copyright {
+    text-align: right; }
+
 /*** Home ***/
-h1 {
-  color: pink; }
 
 /*# sourceMappingURL=main.css.map */
