@@ -1,0 +1,38 @@
+/** Navigation ***/
+nav{
+    background-color: white;
+   	padding: 10px;
+    width: 100%;
+    height: 92px;
+    .logo {
+    	float: left;
+		width: 20%;
+		min-width: 154px;
+    	img{
+			width: 154px;
+		}
+    }
+    .nav-links{
+		display: none;
+		a:hover{
+			color: $pink;
+		}
+    }
+}
+@media (min-width: $md-breakpoint) {
+	nav .nav-links{
+		display: block;
+		float: left;
+		text-align: center;
+		padding: 28px 0;
+		width: 80%;
+		a{
+			padding: 31px;
+		}
+	}
+}
+@media (min-width: $lg-breakpoint) {
+    .nav-links a{
+		padding: 38px;
+	}
+}

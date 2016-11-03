@@ -1,0 +1,96 @@
+// TYPOGRAPHY
+//------------------------------------------//
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: $light;
+    font-style: normal;
+    color: $gray;
+    text-rendering: optimizeLegibility;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+}
+
+p {
+    font-family: inherit;
+    font-weight: $light;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+    line-height: inherit;
+}
+
+a:hover, a:focus {
+    //color: $light-blue;
+}
+a:hover {
+    cursor: pointer;
+}
+
+em, i {
+    font-style: italic;
+    line-height: inherit;
+}
+
+small {
+    font-size: 0.9375rem;
+    line-height: inherit;
+}
+
+ul, ol, dl {
+    font-size: $font-size;
+    line-height: $line-height;
+    margin-bottom: 1.25rem;
+    list-style-position: outside;
+    font-family: inherit;
+}
+
+ul {
+    margin-left: 1.1rem;
+}
+
+blockquote {
+    margin: 0 0 1.25rem;
+    padding: 0.5625rem 1.25rem 0 1.1875rem;
+    border-left: 1px solid #ddd;
+}
+
+blockquote, blockquote p {
+    line-height: $line-height;
+    color: $white;
+}
+
+img, object, embed {
+   max-width: 100%;
+}
+
+/* img {
+    display: inline-block;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+} */
+
+@media only screen and (min-width: $sm-breakpoint){
+/* 	h1, h2, h3, h4, h5, h6 {
+	    line-height: 1.1;
+	}
+	h1{
+	    font-size: 2.3125rem;
+	}
+    h2 {
+        font-size: 1.625rem;
+    } */
+}
